@@ -31,7 +31,7 @@ ${data.description}
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-${data.installation}
+${getSection('Installation', data.installation)}
 ## Usage
 ${data.usage}
 ## License
