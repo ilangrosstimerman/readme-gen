@@ -3,8 +3,11 @@ function generateMarkdown(data) {
   const markdown = fillMarkdownTemplate(data);
   return formatNewlineText(markdown);
 }
+//function to fill template
+//kept separate so that newline characters can be
+//inserted to the final string
 function fillMarkdownTemplate(data) {
-  let markdown =  `# ${data.title}
+  return `# ${data.title}
 ${getBadge(data.license)}
 ${data.description}
 ${getTableOfContents(data.contributing, data.test)}
@@ -15,38 +18,32 @@ ${getSection('Contributing', data.contributing)}
 ${getSection('Tests', data.test)}
 ${getSection('Questions', `For additional questions, feel free to [send me an email](mailto:${data.email}). You can also find more information on my [GitHub profile](https://github.com/${data.userName})`)}.
 `;
-  return markdown;
 }
+//function to get license badge
 function getBadge(license) {
   return `[![${license}](https://img.shields.io/badge/License-${license}-brightGreen)](${getLicenseLink(license)})`
 }
-
+//function to get table of contents
 function getTableOfContents(contributing, test) {
- let tableOfContents = `## Table of Contents
  return `## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)\n`;
-  tableOfContents += contributing ? '- [Contributing](#contributing)\n' : '';
-  tableOfContents += test ? '- [Tests](#tests)\n' : '';
-  tableOfContents += '- [Questions](#questions)';
-  return tableOfContents;
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)`;
 }
-
+//generic function for different sections of document
 function getSection(title, body) {
  return `## ${title}
 ${body}`;
 }
-//generate license link to a file LICENSE with year and owner information
+//function to get license link
 function getLicenseLink(license) {
   switch (license) {
     case 'Apache License 2.0':
       return 'https://www.apache.org/licenses/LICENSE-2.0';
-    case 'GNU GPLv3':
+    case 'GNU GPLv3 License':
       return 'https://www.gnu.org/licenses/gpl-3.0.en.html';
     case 'MIT License':
       return 'https://opensource.org/licenses/MIT';
@@ -54,6 +51,8 @@ function getLicenseLink(license) {
       return 'https://opensource.org/licenses/ISC';
   }
 }
+//function to add newline characters to string
+//inputted inline characters with inquirer are escaped
 function formatNewlineText(text) {
   return text.split('\\n').join('\n');
 }

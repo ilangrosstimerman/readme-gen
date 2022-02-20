@@ -31,6 +31,16 @@ const questions = [
       },
       {
         type: 'list',
+        name: 'license',
+        message: 'What license does this project fall under?',
+        choices: [
+          'Apache License 2.0',
+          'GNU GPLv3 License',
+          'MIT License',
+          'ISC License',
+          ],
+      },
+      {
         type: 'input',
         name: 'contributing',
         message: 'How may others contribute to this project?',
@@ -57,6 +67,7 @@ const questions = [
         filter: trimAnswer,
       },
     ];
+    
 
 //function to validate input
 function noNewlineChar(input) {
