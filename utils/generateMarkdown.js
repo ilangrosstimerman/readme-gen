@@ -45,6 +45,11 @@ For additional questions, feel free to [send me an email](mailto:${data.email}).
 `;
 }
 
+function getBadge(license) {
+  return `[![${license}](https://img.shields.io/badge/License-${license}-brightGreen)](${getLicenseLink(license)})`
+}
+
+
 //put license link in file LICENSE with owner and year info
 function getLicenseLink(license) {
   switch (license) {
