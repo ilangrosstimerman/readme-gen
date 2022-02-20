@@ -49,6 +49,17 @@ function getBadge(license) {
   return `[![${license}](https://img.shields.io/badge/License-${license}-brightGreen)](${getLicenseLink(license)})`
 }
 
+function getTableOfContents(contributing, test) {
+  let tableOfContents = `## Table of Contents
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [License](#license)\n`;
+   tableOfContents += contributing ? '- [Contributing](#contributing)\n' : '';
+   tableOfContents += test ? '- [Tests](#tests)\n' : '';
+   tableOfContents += '- [Questions](#questions)';
+   return tableOfContents;
+ }
+ 
 
 //put license link in file LICENSE with owner and year info
 function getLicenseLink(license) {
