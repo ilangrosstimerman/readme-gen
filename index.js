@@ -41,6 +41,18 @@ const questions = [
       message: 'What is the number of contributors?',
     }
 ];
+
+//function to validate input
+function noNewlineChar(input) {
+    return new Promise((resolve, reject) => {
+      if (input.includes('\\n')) {
+        resolve('Cannot include new line characters!');
+      } else {
+        resolve(true);
+      }
+    });
+  }
+  
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName,data,err => {
