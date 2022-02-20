@@ -1,5 +1,7 @@
 # Project Title
 
+[![licenseName](https://img.shields.io/badge/license-licenseName-brightGreen)](https://choosealicense.com/licenses/mit/)
+
 # Description
 
 # Table of Contents
