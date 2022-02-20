@@ -4,43 +4,46 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('utils/generateMarkdown.js')
 // TODO: Create an array of questions for user input
 const questions = [
-    {
-      type: 'input',
-      name: 'title',
-      message: 'What is the project title?',
-    },
-    {
-      type: 'input',
-      name: 'description',
-      message: 'What is the project description?',
-    },
-    {
-      type: 'input',
-      name: 'installation',
-      message: 'What is the installation process?',
-    },
-    {
-      type: 'input',
-      name: 'usage',
-      message: 'How is the project used?',
-    },
-    {
-      type: 'list',
-      name: 'license',
-      message: 'What is the project license?',
-      choices: [
-        'MIT License',
-        'GNU GPLv3',
-        'ISC License',
-        'Apache License 2.0',
-        ],
-    },
-    {
-      type: 'input',
-      name: 'contributing',
-      message: 'What is the number of contributors?',
-    }
-];
+        {
+          type: 'input',
+          name: 'title',
+          message: 'What is the title of the project?',
+          validate: noNewlineChar,
+        },
+        {
+          type: 'input',
+          name: 'license',
+          message: 'What license does this project fall under?',
+          choices: [
+            'Apache License 2.0',
+            'GNU GPLv3',
+            'MIT License',
+            'ISC License',
+            ],
+        },
+        {
+          type: 'input',
+          name: 'contributing',
+          message: 'How many contributors contributed to this project?',
+        },
+        {
+          type: 'input',
+          name: 'test',
+          message: 'What are some tests for the project?',
+        },
+        {
+          type: 'input',
+          name: 'userName',
+          message: 'What is your GitHub username?',
+          validate: noNewlineChar,
+        },
+        {
+          type: 'input',
+          name: 'email',
+          message: 'What is your email address?',
+          validate: noNewlineChar,
+        },
+      ]
 
 //function to validate input
 function noNewlineChar(input) {
