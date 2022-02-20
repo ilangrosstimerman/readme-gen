@@ -20,6 +20,8 @@ function init() {
         .prompt(questions)
         .then(answers => {
           console.log(answers);
+          const markDown = generateMarkdown(answers);
+          writeToFile('samplereadme.md', markDown);
         });
       }
 
