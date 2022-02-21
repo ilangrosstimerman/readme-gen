@@ -1,11 +1,9 @@
-// function to generate markdown for README
+//generate markdown for README
 function generateMarkdown(data) {
   const markdown = fillMarkdownTemplate(data);
   return formatNewlineText(markdown);
 }
-//function to fill template
-//kept separate so that newline characters can be
-//inserted to the final string
+//fill template
 function fillMarkdownTemplate(data) {
   return `# ${data.title}
 ${getBadge(data.license)}
@@ -19,11 +17,11 @@ ${getSection('Tests', data.test)}
 ${getSection('Questions', `[Email  me](mailto:${data.email}). [GitHub profile](https://github.com/${data.userName})`)}.
 `;
 }
-//function to get license badge
+//get license badge
 function getBadge(license) {
   return `[![${license}](https://img.shields.io/badge/License-${license}-brightGreen)](${getLicenseLink(license)})`
 }
-//function to get table of contents
+//get table of contents
 function getTableOfContents(contributing, test) {
  return `## Table of Contents
 - [Installation](#installation)
@@ -33,12 +31,12 @@ function getTableOfContents(contributing, test) {
 - [Tests](#tests)
 - [Questions](#questions)`;
 }
-//generic function for different sections of document
+//sections function
 function getSection(title, body) {
  return `## ${title}
 ${body}`;
 }
-//function to get license link
+//get license link
 function getLicenseLink(license) {
   switch (license) {
     case 'Apache License 2.0':
@@ -51,8 +49,6 @@ function getLicenseLink(license) {
       return 'https://opensource.org/licenses/ISC';
   }
 }
-//function to add newline characters to string
-//inputted inline characters with inquirer are escaped
 function formatNewlineText(text) {
   return text.split('\\n').join('\n');
 }

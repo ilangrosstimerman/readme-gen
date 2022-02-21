@@ -80,8 +80,6 @@ function noNewlineChar(input) {
     });
   }
 
-//function to trim answers
-
   function trimAnswer(input) {
     return new Promise((resolve, reject) => {
       resolve(input.trim());
@@ -106,6 +104,6 @@ async function init() {
 }
       
 
-// Function call to initialize app
+//call to initialize app
 init();
 
