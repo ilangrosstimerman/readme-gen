@@ -7,32 +7,32 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of this project?',
+        message: 'What is the title of the project?',
         validate: noNewlineChar,
         filter: trimAnswer,
       },
       {
         type: 'input',
         name: 'description',
-        message: 'Describe this project:',
+        message: 'Describe the project:',
         filter: trimAnswer,
       },
       {
         type: 'input',
         name: 'installation',
-        message: 'How do you install this project?',
+        message: 'How do you install the app?',
         filter: trimAnswer,
       },
       {
         type: 'input',
         name: 'usage',
-        message: 'How do you use this project?',
+        message: 'How do you use this app?',
         filter: trimAnswer,
       },
       {
         type: 'list',
         name: 'license',
-        message: 'What license does this project fall under?',
+        message: 'What license applies to this app?',
         choices: [
           'Apache License 2.0',
           'GNU GPLv3 License',
@@ -43,13 +43,13 @@ const questions = [
       {
         type: 'input',
         name: 'contributing',
-        message: 'How may others contribute to this project?',
+        message: 'How may others contribute to the project?',
         filter: trimAnswer,
       },
       {
         type: 'input',
         name: 'test',
-        message: 'What are some tests for this project?',
+        message: 'What are some tests that can be run?',
         filter: trimAnswer,
       },
       {

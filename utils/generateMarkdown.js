@@ -16,7 +16,7 @@ ${getSection('Usage', data.usage)}
 ${getSection('License', `This project is licensed under the [${data.license}](${getLicenseLink(data.license)}).`)}
 ${getSection('Contributing', data.contributing)}
 ${getSection('Tests', data.test)}
-${getSection('Questions', `For additional questions, feel free to [send me an email](mailto:${data.email}). You can also find more information on my [GitHub profile](https://github.com/${data.userName})`)}.
+${getSection('Questions', `[Email  me](mailto:${data.email}). [GitHub profile](https://github.com/${data.userName})`)}.
 `;
 }
 //function to get license badge
