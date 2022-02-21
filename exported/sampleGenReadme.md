@@ -20,4 +20,4 @@ Sample Contribution
 ## Tests
 Sample tests
 ## Questions
-[Email  me](mailto:sample). [GitHub profile](https://github.com/sample).
+[Email me](mailto:sample). [GitHub profile](https://github.com/sample).
