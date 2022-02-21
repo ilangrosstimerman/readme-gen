@@ -20,4 +20,4 @@ Sample Contribution
 ## Tests
 Sample tests
 ## Questions
-For additional questions, feel free to [send me an email](mailto:testing). You can also find more information on my [GitHub profile](https://github.com/testing).
+[Email  me](mailto:sample). [GitHub profile](https://github.com/sample).
