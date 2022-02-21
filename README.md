@@ -9,14 +9,14 @@ Run npm install.
 
 ## Usage
 
-Click [here] for a video walkthrough (link).
+Click ![here] for a video walkthrough (link).
 
 1. Run node index to start the application.
 2. Answer the prompts.
-3. The new README.md [here] (./exported/newREADME.MD).
+3. The new README.md [here] (/exported/newREADME.MD).
 
 ## Sample README.md file
-[exported/sampleGenReadme.md] (./exported/sampleGenReadme.md)
+![exported/sampleGenReadme.md] (/exported/sampleGenReadme.md)
 
 ## Built With
 
