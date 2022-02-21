@@ -16,7 +16,7 @@ Click ![here] for a video walkthrough (link).
 3. The new README.md [here](/exported/newREADME.MD).
 
 ## Sample README.md file
-![exported/sampleGenReadme.md](/exported/sampleGenReadme.md)
+[exported/sampleGenReadme.md](/exported/sampleGenReadme.md)
 
 ## Built With
 

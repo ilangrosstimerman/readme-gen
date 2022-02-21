@@ -1,5 +1,6 @@
 # Sample Title
-[Apache License 2.0](https://img.shields.io/badge/License-Apache License 2.0-brightGreen)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Apache License 2.0](https://img.shields.io/badge/License-Apache%20License%202.0-brightGreen)](https://www.apache.org/licenses/LICENSE-2.0)
+
 Sample description
 ## Table of Contents
 - [Installation](#installation)
