@@ -9,7 +9,7 @@ Run npm install.
 
 ## Usage
 
-Click [here](https://drive.google.com/file/d/1MH4T3KJoatlOoZkVoX4AMfBvxytWtX13/view?usp=sharing) for a video walkthrough.
+Click [here](https://drive.google.com/drive/folders/1zalYUe1KXbPm_a8OKD63666c7M_dQZVX?usp=sharing) for a video walkthrough.
 
 1. Run node index to start the application.
 2. Answer the prompts.
