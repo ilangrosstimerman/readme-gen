@@ -1,5 +1,6 @@
 # Professional README.md Generator
-[![Apache License 2.0](https://img.shields.io/badge/License-Apache License 2.0-brightGreen)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Apache License 2.0](https://img.shields.io/badge/License-Apache%20License%202.0-brightGreen)](https://www.apache.org/licenses/LICENSE-2.0)
+
 Allows a user to generate professional README.md files direclty in the terminal by answering prompts.
 ## Table of Contents
 - [Installation](#installation)
