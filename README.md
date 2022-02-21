@@ -2,14 +2,6 @@
 
 An application that creates README.md files based on Node.JS input.
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
-- [Questions](#questions)
-
 ## Installation
 
 App uses [Inquirer.js.](https://www.npmjs.com/package/inquirer).
