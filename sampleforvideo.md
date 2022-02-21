@@ -1,7 +1,6 @@
-# Professional README.md Generator
-[![Apache License 2.0](https://img.shields.io/badge/License-Apache%20License%202.0-brightGreen)](https://www.apache.org/licenses/LICENSE-2.0)
-
-Allows a user to generate professional README.md files direclty in the terminal by answering prompts.
+# Professional Readme Generator
+[![Apache License 2.0](https://img.shields.io/badge/License-Apache License 2.0-brightGreen)](https://www.apache.org/licenses/LICENSE-2.0)
+Allows user to generate readme files directly from the terminal via node.js
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -10,13 +9,13 @@ Allows a user to generate professional README.md files direclty in the terminal 
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-In terminal, run npm i, then run node index.
+run npm i. Then run node index.
 ## Usage
-Run the commands above, then answer prompts. Access generated README.md file in the exported folder.
+Run the commands above, then answer the prompts in terminal
 ## License
 This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 ## Contributing
-Improve comments in code
+Improve comments for others
 ## Tests
 Run npm test
 ## Questions
